@@ -23,10 +23,10 @@ export default function Layout({ children, title }: Props) {
         {children}
 
         <div className={styles.grid}>
-          <Link href="/docs">
+          <Link href="/">
             <a className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
+              <h2>Homepage &rarr;</h2>
+              <p>Click here to go back to the homepage.</p>
             </a>
           </Link>
 

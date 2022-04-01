@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import { useRouter } from "next/router";
 import { ChangeEvent, useState } from "react";
-import Layout from "../components/Layout";
+import Layout from "../../../components/Layout";
 
 const searchStateToURL = (searchState: any) => {
   return searchState

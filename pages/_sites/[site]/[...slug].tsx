@@ -10,10 +10,8 @@ const InnerPage: NextPage = () => {
   // push searchState changes to the querystring
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const newSearchState = { [e.target.name]: e.target.value };
-    router.push({
-      pathname: window.location.pathname,
-      query: new URLSearchParams(newSearchState).toString(),
-    });
+    const querystring = new URLSearchParams(newSearchState).toString();
+    history.pushState("", "", "?" + querystring);
     setSearchState(newSearchState);
   };
 
